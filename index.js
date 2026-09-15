@@ -10,7 +10,7 @@ app.use(express.json());
 const PORT = 3000;
 
 // The URL of your AI developer's backend
-// The URL of your AI developer's backend (Hugging Face Space)
+// The URL of your AI developer's backend 
 const AI_BACKEND_URL = 'https://darish555-voicereach-ai.hf.space/chat';
 
 // Vapi expects an OpenAI compatible endpoint
@@ -101,6 +101,6 @@ app.post(['/v1/chat/completions', '/chat/completions'], async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 VoiceReach Proxy Server running at http://localhost:${PORT}`);
+    console.log(`VoiceReach Proxy Server running at http://localhost:${PORT}`);
     console.log(`Waiting for Vapi connections on POST /v1/chat/completions`);
 });
