@@ -12,10 +12,10 @@ async function test() {
             call: { id: "test-call-id-999" }
         });
 
-        console.log("\n✅ Success! Received response from Proxy:");
+        console.log("\n Success! Received response from Proxy:");
         console.log(JSON.stringify(response.data, null, 2));
     } catch (e) {
-        console.error("❌ Test failed:", e.message);
+        console.error(" Test failed:", e.message);
     }
 }
 
