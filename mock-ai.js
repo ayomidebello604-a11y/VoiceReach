@@ -25,5 +25,5 @@ app.post('/chat', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🤖 Mock AI Developer Server running at http://localhost:${PORT}`);
+    console.log(` Mock AI Developer Server running at http://localhost:${PORT}`);
 });
